@@ -25,7 +25,7 @@ export default function Login() {
 
     if (Object.keys(errorObj).length === 0) {
       try {
-        let resp = await fetch(`http://localhost:3000/user/login`, {
+        let resp = await fetch(`https://blog-backend-2o1k.vercel.app/user/login`, {
           method: 'POST',
           credentials: 'include',
           headers: {
