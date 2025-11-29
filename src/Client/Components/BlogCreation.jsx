@@ -42,7 +42,7 @@ const BlogCreation = () => {
   // Update blog
   let update = async () => {
     try {
-      let resp = await fetch('http://localhost:3000/post/update', {
+      let resp = await fetch('/post/update', {
         method: 'PUT',
         credentials: 'include',
         headers: { 'content-type': 'application/json' },
