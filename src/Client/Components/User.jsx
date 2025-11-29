@@ -10,7 +10,7 @@ const User = () => {
 
     const getBlog = async () => {
       try {
-        let resp = await fetch(`https://blog-backend-6kdu.vercel.app/post/getuserpost`, {
+        let resp = await fetch(` https://blog-backend-6kdu.vercel.app/api/post/getuserpost`, {
           credentials: 'include'
         })
         let jresp = await resp.json()

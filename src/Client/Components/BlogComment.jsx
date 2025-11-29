@@ -13,7 +13,7 @@ const BlogComment = ({id, userP}) => {
   // GET COMMENTS
   let getComment = async () => {
     try {
-      let resp = await fetch(`https://blog-backend-6kdu.vercel.app/comment/get/${id}`, {
+      let resp = await fetch(` https://blog-backend-6kdu.vercel.app/api/comment/get/${id}`, {
         credentials: 'include'
       });
       let jresp = await resp.json();
@@ -37,7 +37,7 @@ const BlogComment = ({id, userP}) => {
   // SUBMIT COMMENT
   let submitComm = async () => {
     try {
-      let resp = await fetch('https://blog-backend-6kdu.vercel.app/comment/create', {
+      let resp = await fetch(' https://blog-backend-6kdu.vercel.app/api/comment/create', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -61,7 +61,7 @@ const BlogComment = ({id, userP}) => {
   // DELETE COMMENT
   let deleteC = async (cid) => {
     try {
-      let resp = await fetch(`https://blog-backend-6kdu.vercel.app/comment/delete/${cid}`, {
+      let resp = await fetch(` https://blog-backend-6kdu.vercel.app/api/comment/delete/${cid}`, {
         method: 'DELETE',
         credentials: 'include'
       });

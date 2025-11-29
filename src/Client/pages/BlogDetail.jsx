@@ -19,7 +19,7 @@ const BlogDetail = () => {
 
     const getBlog = async () => {
       try {
-        let resp = await fetch(`http://localhost:3000/post/getDetail/${id}`, {
+        let resp = await fetch(` https://blog-backend-6kdu.vercel.app/api/post/getDetail/${id}`, {
           credentials: 'include'
         })
         console.log('parent api call ka baad')
