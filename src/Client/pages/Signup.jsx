@@ -130,7 +130,7 @@ setPassword(e.target.value)
         <p className="text-center text-gray-600 text-sm mt-6">
           Already have an account?{" "}
          
-          <Link className='text-purple-600 font-medium hover:underline' to={'/login'}>Login</Link>
+          <Link className='text-purple-600 font-medium hover:underline' to={'/login'}>Loginhahaja</Link>
         </p>
       </div>
     </div>
