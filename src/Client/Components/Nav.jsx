@@ -14,7 +14,7 @@ export default function Nav() {
   // logout function
   const logout = async () => {
     try {
-      let resp = await fetch("http://localhost:3000/user/logout", {
+      let resp = await fetch("https://blog-backend-6kdu.vercel.app/user/logout", {
         credentials: "include",
       });
       let jresp = await resp.json();
@@ -33,7 +33,7 @@ export default function Nav() {
     try {
       let formdata = new FormData();
       formdata.append("blog", e.target.files[0]);
-      let resp = await fetch("http://localhost:3000/user/userImg", {
+      let resp = await fetch("https://blog-backend-6kdu.vercel.app/user/userImg", {
         method: "PUT",
         credentials: "include",
         body: formdata,

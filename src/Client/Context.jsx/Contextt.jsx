@@ -15,7 +15,7 @@ const Contextt = ({ children }) => {
 
   let getBlog = async () => {
     try {
-      let resp = await fetch(`http://localhost:3000/post/getpost`, {
+      let resp = await fetch(`https://blog-backend-6kdu.vercel.app/post/getpost`, {
         credentials: "include",
       })
       let jresp = await resp.json()

@@ -42,7 +42,7 @@ const BlogCreation = () => {
   // Update blog
   let update = async () => {
     try {
-      let resp = await fetch('/post/update', {
+      let resp = await fetch('https://blog-backend-6kdu.vercel.app/post/update', {
         method: 'PUT',
         credentials: 'include',
         headers: { 'content-type': 'application/json' },
@@ -66,7 +66,7 @@ const BlogCreation = () => {
     try {
       let formData = new FormData();
       formData.append("blog", e.target.files[0]);
-      let resp = await fetch('http://localhost:3000/post/createImg', {
+      let resp = await fetch('https://blog-backend-6kdu.vercel.app/post/createImg', {
         method: "POST",
         credentials: 'include',
         body: formData
@@ -91,7 +91,7 @@ const BlogCreation = () => {
     if (!imgData) return toast.warning("Please upload a blog image");
 
     try {
-      let resp = await fetch(`http://localhost:3000/post/createpost`, {
+      let resp = await fetch(`https://blog-backend-6kdu.vercel.app/post/createpost`, {
         method: "POST",
         credentials: "include",
         headers: { "content-type": "application/json" },
