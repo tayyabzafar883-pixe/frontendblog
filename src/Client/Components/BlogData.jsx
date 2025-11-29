@@ -14,7 +14,7 @@ const BlogData = ({ detail, likke, dislikee }) => {
   // DELETE BLOG
   const deleteBlog = async (id) => {
     try {
-      let resp = await fetch(`https://blog-backend-2o1k.vercel.app/post/delete/${id}`, {
+      let resp = await fetch(`http://localhost:3000/post/delete/${id}`, {
         method: "DELETE",
         credentials: "include",
       });
@@ -34,7 +34,7 @@ const BlogData = ({ detail, likke, dislikee }) => {
   // LIKE BLOG
   const like = async (action, id) => {
     try {
-      let resp = await fetch(`https://blog-backend-2o1k.vercel.app/post/like/${id}`, {
+      let resp = await fetch(`http://localhost:3000/post/like/${id}`, {
         method: 'PUT',
         credentials: 'include',
       });
@@ -57,7 +57,7 @@ const BlogData = ({ detail, likke, dislikee }) => {
   // DISLIKE BLOG
   const disLike = async (action, id) => {
     try {
-      let resp = await fetch(`https://blog-backend-2o1k.vercel.app/post/disLike/${id}`, {
+      let resp = await fetch(`http://localhost:3000/post/disLike/${id}`, {
         method: 'PUT',
         credentials: 'include',
       });

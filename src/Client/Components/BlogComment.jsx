@@ -13,7 +13,7 @@ const BlogComment = ({id, userP}) => {
   // GET COMMENTS
   let getComment = async () => {
     try {
-      let resp = await fetch(`https://blog-backend-2o1k.vercel.app/comment/get/${id}`, {
+      let resp = await fetch(`http://localhost:3000/comment/get/${id}`, {
         credentials: 'include'
       });
       let jresp = await resp.json();

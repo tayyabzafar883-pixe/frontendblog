@@ -23,7 +23,7 @@ let[error,seterror]=useState('')
     }
 
     if(Object.keys(error).length==0){
-    let resp= await  fetch(`https://blog-backend-2o1k.vercel.app/user/create`,{
+    let resp= await  fetch(`http://localhost:3000/user/create`,{
         method:'POST',
         credentials:'include',
         headers:{
